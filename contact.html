@@ -8,6 +8,7 @@
   <title>Contact MDHL - Mighty Ducks Hockey League</title>
   <link href="css/mdhl_3.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="./css/images/mdhl_logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 	
 <body>
@@ -36,11 +37,23 @@
   <main class="main-contact">
     <form action="" class="form-contact">
       <div class="camp-contact">
-        <input type="text" name="name" id="name" class="input-contact" placeholder="Name">
+        <div class="inputGroup">
+          <input type="text" required="" autocomplete="off" name="name" id="name">
+          <label for="signature">Name</label>
+        </div>
+        <div class="inputGroup">
+          <input type="text" required="" autocomplete="off" name="subname" id="subname">
+          <label for="signature">Subname</label>
+        </div>
+        <!-- <div class="inputGroup">
+          <input type="text" required="" autocomplete="off" name="subname" id="subname">
+          <label for="signature">Subname</label>
+        </div> -->
+        
 
-        <input type="text" name="subname" id="subname" placeholder="Subname" class="input-contact">
+        <!-- <input type="text" name="subname" id="subname" placeholder="Subname" class="input-contact"> -->
 
-        <input type="email" name="email" id="email" placeholder="Email" class="input-contact">
+        <!-- <input type="email" name="email" id="email" placeholder="Email" class="input-contact"> -->
 
         <textarea name="message" id="message" cols="30" rows="10" class="textarea-contact" placeholder="Message"></textarea>
       </div>

@@ -8,7 +8,7 @@
   <title>Registration MDHL - Mighty Ducks Hockey League</title>
   <link rel="shortcut icon" href="./css/images/mdhl_logo.png" type="image/x-icon">
   <link href="css/mdhl_3.css" rel="stylesheet" type="text/css" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -37,24 +37,60 @@
     <div class="content-registration">
       <form method="get" action="show_data.html" class="form-registration"> 
         <div class="stylized" class="content-camp-form">
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="first_name" id="first_name">
+            <label for="first_name">Player's First Name</label>
+          </div>
           <!-- <label for="first_name" class="label-registration"></label> -->
-          <input type="text" name="first_name" id="first_name" class="input-registration" placeholder="Player's First Name:"/>
+          <!-- <input type="text" name="first_name" id="first_name" class="input-registration" placeholder="Player's First Name:"/> -->
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="last_name" id="last_name">
+            <label for="last_name">Last Name</label>
+          </div>
           <!-- <label for="last_name" class="label-registration">Last Name:</label> -->
-          <input type="text" name="last_name" id="last_name" class="input-registration" placeholder="Last Name"/>
+          <!-- <input type="text" name="last_name" id="last_name" class="input-registration" placeholder="Last Name"/> -->
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="street_address" id="street_address">
+            <label for="street_address">Street Address</label>
+          </div>
           <!-- <label for="street_address" class="label-registration">Street Address:</label> -->
-          <input type="text" name="street_address" id="street_address" class="input-registration" placeholder="Street Address"/>
+          <!-- <input type="text" name="street_address" id="street_address" class="input-registration" placeholder="Street Address"/> -->
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="city" id="city">
+            <label for="city">City</label>
+          </div>
           <!-- <label for="city" class="label-registration">City:</label> -->
-          <input type="text" name="city" id="city" class="input-registration" placeholder="City"/>
+          <!-- <input type="text" name="city" id="city" class="input-registration" placeholder="City"/> -->
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="zip" id="zip">
+            <label for="zip">Zip Code</label>
+          </div>
           <!-- <label for="zip" class="label-registration">Zip Code:</label> -->
-          <input type="text" name="zip" id="zip" class="input-registration" placeholder="Zip Code"/>
+          <!-- <input type="text" name="zip" id="zip" class="input-registration" placeholder="Zip Code"/> -->
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="birth_date" id="birth_date">
+            <label for="birth_date">Birth Date (mm/dd/yyyy)</label>
+          </div>
           <!-- <label for="birth_date" class="label-registration">Birth Date (mm/dd/yyyy):</label> -->
-          <input type="text" name="birth_date" id="birth_date" class="input-registration" placeholder="Birth Date"/>
+          <!-- <input type="text" name="birth_date" id="birth_date" class="input-registration" placeholder="Birth Date"/> -->
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="parent_guardian" id="parent_guardian">
+            <label for="parent_guardian">Parent/Guardian Name</label>
+          </div>
           <!-- <label for="parent_guardian" class="label-registration">Parent/Guardian Name:</label> -->
-          <input type="text" name="parent_guardian" id="parent_guardian" class="input-registration" placeholder="Parent/Guardian Name"/>
+          <!-- <input type="text" name="parent_guardian" id="parent_guardian" class="input-registration" placeholder="Parent/Guardian Name"/> -->
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="contact_phone" id="contact_phone">
+            <label for="contact_phone">Contact Phone</label>
+          </div>
           <!-- <label for="contact_phone" class="label-registration">Contact Phone:</label> -->
-          <input type="text" name="contact_phone" id="contact_phone" class="input-registration" placeholder="Phone"/>
+          <!-- <input type="text" name="contact_phone" id="contact_phone" class="input-registration" placeholder="Phone"/> -->
+          <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" name="contact_email" id="contact_email">
+            <label for="contact_email">Contact Email</label>
+          </div>
           <!-- <label for="contact_email" class="label-registration">Contact Email:</label> -->
-          <input type="text" name="contact_email" id="contact_email" class="input-registration" placeholder="Email"/>
+          <!-- <input type="text" name="contact_email" id="csontact_email" class="input-registration" placeholder="Email"/> -->
         </div>
       <div class="content-check-registration">
         <fieldset class="check-registration">
@@ -181,10 +217,16 @@
             By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.
           </p>
           <div class="firma-contract">
-            <label for="signature">Parent/Guardian Signature:</label>
-            <input type="text" name="signature" id="signature" class="input-registration"/>
-            <label for="sig_date">Date:</label>
-            <input type="text" name="sig_date" id="sig_date" class="input-registration"/>
+            <div class="inputGroup">
+              <input type="text" required="" autocomplete="off" name="signature" id="signature">
+              <label for="signature">Parent/Guardian Signature</label>
+            </div>
+            <div class="inputGroup">
+              <input type="text" required="" autocomplete="off" name="sig_date" id="sig_date">
+              <label for="signature">Date</label>
+            </div>
+            <!-- <input type="text" name="signature" id="signature" class="input-registration" placeholder="Parent/Guardian Signature"/> -->
+            <!-- <input type="text" name="sig_date" id="sig_date" class="input-registration" placeholder="Date"/> -->
           </div>
           <input type="submit" class="button-registration"/>
         </div>
