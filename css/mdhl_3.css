@@ -1,0 +1,421 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, 'Courier New', Courier, monospace ;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+:root{
+  --blanco:#fff;
+  --verde-mate: #51873F;
+  --verde-clarito:#B8DECD;
+  --negro:#000;
+  --gris-clarito:#CED4DB;
+}
+
+
+.barra-nav{
+  background-color: var(--verde-mate);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list-nav{
+  list-style: none;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.button-nav{
+  text-decoration: none;
+  color: var(--blanco);
+  transition: 0.3s;
+}
+
+.button-nav:hover{
+  color: rgb(0, 0, 0);
+}
+
+.logo-nav{
+  padding:5px 0;
+  width: 60px;
+  height: 60px;
+}
+
+.ham{
+  display: none;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.ham span{
+  display: block;
+  background-color: var(--blanco);
+  height: 3px;
+  width: 28px;
+  margin: 8px auto;
+  border-radius: 2px;
+}
+
+
+
+
+/* HOME  */
+.section-home{
+  display: flex;
+  flex-direction: column;
+}
+
+.content-title-page{
+  width: 100%;
+  height: 80px;
+  background-color: var(--verde-clarito);
+  color: var(--negro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-home{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details{
+  margin: 50px;
+  height: 180px;
+  background-color: var(--gris-clarito);
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer{
+  width: 100%;
+  
+}
+
+.img-footer{
+  width: 100%;
+}
+
+
+/* ABOUT  */
+
+.section-about{
+  height: 100%;
+  width: 100%;
+}
+
+.content-card-about{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-about{
+  background-color: var(--gris-clarito);
+  height: 28%;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 16px;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* REGISTRATION  */
+
+.content-registration{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stylized{
+  padding: 12px;
+}
+
+.input-registration{
+  width: 100%;
+  height: 60px;
+  margin: 1rem 0;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.check-registration{
+  width: 95%;
+  height: 6rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.cuestion-registration{
+  margin-bottom: 0.8rem;
+}
+
+.content-firma{
+  width: 95%;
+  text-align: center;
+  margin: auto;
+}
+
+.firma-contract{
+  margin: 2rem auto;
+}
+
+.button-registration{
+  width: 100%;
+  background-color: var(--verde-clarito);
+  height: 2.5rem;
+  border: none;
+}
+
+/* GAME INFORMATION  */
+
+.content-game{
+  height: 90vh;
+}
+
+.title-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.table-game{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-contact-game{
+  width: 90%;
+  margin: auto;
+}
+
+.parrafos-game{
+  padding: 1rem;
+}
+
+/* RULES  */
+.content-rules{
+  height: 100%;
+  width: 95%;
+  margin: auto;
+}
+
+.title-rules{
+  text-align: center;
+  padding: 1rem;
+}
+
+.rules > ul, ol{
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.rules > h2, h3, h3, h5, h6{
+  padding: 1rem 0;
+}
+
+/* CONTACT  */
+.main-contact{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-contact{
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-contact{
+  width: 100%;
+  height: 60px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.textarea-contact{
+  width: 100%;
+  margin: 1rem 0;
+  resize: none;
+  padding: 1rem;
+}
+
+.more-info-contact{
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.button-contact{
+  width: 100%;
+  height: 60px;
+  border: none;
+  margin: 10px 0;
+  background-color: var(--verde-clarito);
+}
+
+.button-contact:hover{
+  background-color: #8addb8;
+}
+
+/* RESPONSIVE  */
+@media (max-width: 768px){
+  .body{
+    overflow: hidden;
+  }
+
+  .logo-nav{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .ham {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 10;
+    transition: 0.2s 0.1s;
+      
+  }
+
+  .ham:hover{
+    transform: rotate(360deg);
+  }
+
+
+  .barra-nav{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0; 
+    height: auto; 
+  }
+  
+  
+  .list-nav{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* z-index: 2; */
+    display: none;
+    opacity: 0;
+  }
+  
+  @keyframes menuMostrar {
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+  
+  
+  .list-nav.activado{
+    display: flex;
+    animation: menuMostrar 500ms ease-in-out both;
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    background-color: var(--verde-mate);
+  }
+
+  .button-nav{
+    width: 100%;
+  }
+
+  .br-1.animado{
+    transform: rotate(-45deg) translate(-9px, 7px);
+  }
+
+  .br-2.animado {
+    opacity: 0;
+  }
+
+  .br-3.animado{
+    transform: rotate(45deg) translate(-8px, -7px);
+  }
+}
+
+@media (min-width: 769px){
+  /* HOME  */
+
+  .card-home{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-details{
+    height: 30rem;
+    width: 18rem;
+  }
+
+  /* ABOUT  */
+
+  .content-card-about{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card-about{
+    height: 30rem;
+    width: 25rem;
+    margin: 1rem;
+  }
+
+  /* REGISTRATION  */
+
+  .content-registration{
+    width: 60%;
+    margin: auto;
+  }
+
+  /* CONTACT  */
+
+  .form-contact{
+    justify-content: center;
+    width: 60%;
+    margin: 3rem 0;
+  }
+
+}
