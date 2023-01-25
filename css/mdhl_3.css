@@ -123,12 +123,12 @@ body{
 /* ABOUT  */
 
 .section-about{
-  height: 100%;
+
   width: 100%;
 }
 
 .content-card-about{
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -231,6 +231,47 @@ body{
   padding: 1rem;
 }
 
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  /* max-width: 190px; */
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: var(--blanco);
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+
+
 /* RULES  */
 .content-rules{
   height: 100%;
@@ -254,7 +295,6 @@ body{
 
 /* CONTACT  */
 .main-contact{
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,14 +350,15 @@ body{
 }
 
 /* RESPONSIVE  */
-@media (max-width: 768px){
+@media only screen and (min-width: 100px) and (max-width:980px){
   .body{
     overflow: hidden;
   }
 
   .logo-nav{
-    width: 50px;
-    height: 50px;
+    margin-left:10px;
+    width: 55px;
+    height: 55px;
   }
   
   .ham {
@@ -386,11 +427,7 @@ body{
   .br-3.animado{
     transform: rotate(45deg) translate(-8px, -7px);
   }
-}
-
-@media (min-width: 769px){
   /* HOME  */
-
   .card-home{
     flex-direction: row;
     flex-wrap: wrap;
@@ -400,75 +437,38 @@ body{
     height: 30rem;
     width: 18rem;
   }
-
   /* ABOUT  */
-
+  
   .content-card-about{
+    height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  
   .card-about{
     height: 30rem;
     width: 25rem;
     margin: 1rem;
   }
-
+  
   /* REGISTRATION  */
-
+  
   .content-registration{
     width: 60%;
     margin: auto;
   }
-
+  
   /* CONTACT  */
-
+  
   .form-contact{
     justify-content: center;
     width: 60%;
     margin: 3rem 0;
   }
-
 }
+/* 
+@media (min-width: 769px){
 
 
 
-.inputGroup {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 1em 0 1em 0;
-  /* max-width: 190px; */
-  position: relative;
-}
-
-.inputGroup input {
-  font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid rgb(200, 200, 200);
-  background-color: transparent;
-  border-radius: 20px;
-  width: 100%;
-}
-
-.inputGroup label {
-  font-size: 100%;
-  position: absolute;
-  left: 0;
-  padding: 0.8em;
-  margin-left: 0.5em;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  color: rgb(100, 100, 100);
-}
-
-.inputGroup :is(input:focus, input:valid)~label {
-  transform: translateY(-50%) scale(.9);
-  margin: 0em;
-  margin-left: 1.3em;
-  padding: 0.4em;
-  background-color: var(--blanco);
-}
-
-.inputGroup :is(input:focus, input:valid) {
-  border-color: rgb(150, 150, 200);
-}
+} */
