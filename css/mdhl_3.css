@@ -137,18 +137,14 @@ body{
 
 .card-about{
   background-color: var(--gris-clarito);
-  height: 28%;
+  height: 225px;
   width: 90%;
-  margin: auto;
+  margin: 20px auto;
   padding: 10px;
   border-radius: 16px;
-  overflow-y: scroll;
-  overscroll-behavior-y: contain;
-  scroll-snap-type: y proximity;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -156,6 +152,8 @@ body{
 /* REGISTRATION  */
 
 .content-registration{
+  width: 50%;
+  margin: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -337,7 +335,7 @@ body{
 }
 
 .button-contact{
-  width:80%;
+  width:95%;
   height: 48px;
   border: none;
   border-radius: 200px;
@@ -454,7 +452,7 @@ body{
   /* REGISTRATION  */
   
   .content-registration{
-    width: 60%;
+    width: 90%;
     margin: auto;
   }
   
@@ -462,7 +460,7 @@ body{
   
   .form-contact{
     justify-content: center;
-    width: 60%;
+    width: 95%;
     margin: 3rem 0;
   }
 }
